@@ -14,8 +14,7 @@ export function runCliAnalyze(sourcePath: string, outputDir: string): Promise<st
     console.log(sourcePath)
      console.log(outputDir)
     return new Promise((resolve, reject) => {
-        // const cmd = `npx ai-migrate-cli --path ${sourcePath} --type php --diagram --diagram-out ${outputDir}`;
-        const cmd = `npx ai-migrate-cli --path ${sourcePath} --type php`;
+        const cmd = `npx ai-migrate-cli --path ${sourcePath} --type php --diagram --diagram-out ${outputDir} --ai --filter view model controller`;
 
         console.log("▶️ Running:", cmd);
 
